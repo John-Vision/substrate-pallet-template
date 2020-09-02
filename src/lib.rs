@@ -73,7 +73,7 @@ decl_module! {
 			let who = ensure_signed(origin)?;
 
 			// Update storage.
-			Something::put(something);
+			Something::put(something+1);
 
 			// Emit an event.
 			Self::deposit_event(RawEvent::SomethingStored(something, who));
