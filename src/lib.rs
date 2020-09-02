@@ -73,7 +73,7 @@ decl_module! {
 			let who = ensure_signed(origin)?;
 
 			// Update storage.
-			let something_plus = something + 5;
+			let something_plus = something + 6;
 			Something::put(something_plus);
 
 			// Emit an event.
